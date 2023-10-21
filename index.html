@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-scene background="color: #1111111">
+
+            <!--Camera-->
+            <a-entity position="1 0 10">
+                <a-camera></a-camera>
+            </a-entity>
+
+            <!--Body-->
+            <a-box position="4 0 0" width="3" height="4" color="#63666A"></a-box>
+
+            <!--left-leg-->
+            <a-box position="3 -3.5 0" width="1" height="3" color="#808080"></a-box>
+            <!--right-leg-->
+            <a-box position="5 -3.5 0" width="1" height="3" color="#808080"></a-box>
+
+            <!--left-foot-->
+            <a-box position="3 -4.75 1" width="1" height="0.5" color="#808080"></a-box>
+            <!--right-foot-->
+            <a-box position="5 -4.75 1" width="1" height="0.5" color="#808080"></a-box>
+
+            <!--right-shoulder-->
+            <a-box position="6 1.5 0" width="1" height="1" color="#808080"></a-box>
+            <!--right-arm-->
+            <a-box position="7 0.25 0" width="1" height="3.5" color="#808080"></a-box>
+
+            <!--left-shoulder-->
+            <a-box position="2 1.5 0" width="1" height="1" color="#808080"></a-box>
+            <!--left-arm-->
+            <a-box position="1 2.75 0" width="1" height="3.5" color="#808080"></a-box>
+
+            <!--head-->
+            <a-box position="4 3.01 0" width="2" height="2" color="#808080"></a-box>
+            <a-box position="4 2.5 0.2" width="1" height="0.5" color="#87CEEB"></a-box>
+            <!--teeth-grills-->
+            <a-box position="4.4 2.5 0.3" width="0.01" height="0.5" color="black"></a-box>
+            <a-box position="4.2 2.5 0.3" width="0.01" height="0.5" color="black"></a-box>
+            <a-box position="4 2.5 0.3" width="0.01" height="0.5" color="black"></a-box>
+            <a-box position="3.6 2.5 0.3" width="0.01" height="0.5" color="black"></a-box>
+            <a-box position="3.8 2.5 0.3" width="0.01" height="0.5" color="black"></a-box>
+
+            <!--Eyes-->
+            <a-box position="3.4 3.3 0.3" width="0.5" height="0.5" color="white"></a-box>
+
+            <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: position; to: 3.2 3.4; easing: linear; loop: true; dur: 3000">
+            <a-box position="3.4 3.3 -5" width="0.2" height="0.2" color="black"></a-box>
+            </a-entity>
+
+            <a-box position="4.5 3.3 0.3" width="0.5" height="0.5" color="white"></a-box>
+            <a-box position="4.5 3.3 0.3" width="0.2" height="0.2" color="black"></a-box>
+
+        </a-scene>
+    </body>
+
+</html>
